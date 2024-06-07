@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,700&family=Berkshire+Swash&family=Cardo&family=Cinzel+Decorative:wght@700&family=Handjet:wght@300&family=Handlee&family=Lato&family=Lilita+One&family=Lobster&family=Lora:ital,wght@1,500&family=Lugrasimo&family=Merienda:wght@700&family=Monoton&family=Nunito&family=Oswald:wght@700&family=Roboto:wght@300&family=Shrikhand&family=VT323&family=Victor+Mono:wght@100&family=Yatra+One&family=Marcellus+SC&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Eczar:wght@400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+    display: grid;
+      grid-template-columns: 6% 1fr; /* Sidebar and main content */
+      grid-template-rows: auto 1fr auto;
+  }
+
+
+  main {
+    grid-column: 2 / -1; /* Main content */
+    grid-row: 1 / -2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    overflow-y: auto; /* Enable scrolling in the main content */
+  }
+
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; /* Set the height to 100vh to cover the entire viewport */
+    margin: 0; /* Remove margin to eliminate the gap */
+  }
+
+  .video-container video {
+    object-fit: fill;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .header{
+    grid-column: 1 / 2; /* Sidebar */
+    grid-row: 1 / -1;
+    text-align: center;
+    gap: 25px;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    z-index: 100;
+    align-content: center;
+  }
+  
+  .navbar a{
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .2s;
+    cursor: pointer;
+  }
+  
+  .navbar a:hover, .navbar a:active{
+    color: rgb(218, 255, 10);
+  }
+
+  header .social_icon{
+margin-top: 500px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  header .social_icon li{
+    list-style: none;
+  }
+  header .social_icon li a{
+    font-size: 1.5em;
+    color: aliceblue;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  header .social_icon li a:hover{
+    color: rgb(164, 168, 146);
+  }
+
+  
+.user{
+  transition: .2s;
+  cursor: pointer;
+}
+
+  .user:hover{
+content: url(assets/logo1.png);
+  }
+
+  .hero1,.hero2,.hero3{
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    width: 90%;
+  }
+
+  video {
+    display: block;
+    height: auto;
+    margin: auto;
+    position: relative;
+    width: 100%;
+  }
+
+  .hero1:after,.hero2:after,.hero3:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* Page-4 Styles */
+
+.page-4 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  z-index: 100px;
+
+}
+
+.page-4 video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+
+}
+
+.page-4 a {
+  text-decoration: none;
+}
+
+.page-4 .cursor {
+  transition: opacity 0.3s, transform 0.3s;
+  position: relative;
+  width: 500px;
+  height: 333px;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  background: no-repeat 50% 50%;
+  background-size: cover;
+  z-index: 1;
+  border-radius: 5PX;
+}
+
+.page-4 .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px; /* Adjust according to your design */
+  position: relative;
+  z-index: 1; /* Ensure wrapper stays above the video */
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.805);
+  padding: auto;
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
+align-items: center;
+justify-content: space-between;
+flex-basis: 1;
+position: relative;
+}
+
+
+.project-title {
+  font-size: 1.1em;
+  margin-bottom: 5.3px;
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.project-categ {
+  float: right;
+  margin-top: -20px;
+  align-self: flex-end;
+  font-family: "Marcellus SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* ------------------------loader--------------------------------- */
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader{
+  position: absolute;
+  display: flex;
+  animation: animName 5s linear infinite;
+    }
+  
+    @keyframes animName {
+      0%{
+         transform: rotate(0deg);
+        }
+     100%{
+         transform: rotate(360deg);
+        }
+     }
+/* ------------------------loader--------------------------------- */
