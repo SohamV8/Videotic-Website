@@ -6,4 +6,4 @@ VFX Portfolio: Highlighting advanced editing skills with stunning visual effects
 Creative Tools: Leveraging Photoshop and After Effects for top-notch visuals.
 Responsive Experience: Optimized for all devices and screen sizes.
 
-You can Check this website on : https://sohamv8.netlify.app/
+You can Check this website on : https://videotic-website.vercel.app/index.html
